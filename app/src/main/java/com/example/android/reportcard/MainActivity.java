@@ -2,6 +2,7 @@ package com.example.android.reportcard;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 
 import java.util.ArrayList;
 
@@ -23,6 +24,10 @@ public class MainActivity extends AppCompatActivity {
         reportCards.add(new ReportCard("Elisa Bonino", 83, 84, 34));
         reportCards.add(new ReportCard("Paula Chiarino", 90, 98, 91));
 
+        // Log to see the values
+        Log.v("NumbersActivity", "Current word: " + reportCards.toString());
 
     }
+
+
 }

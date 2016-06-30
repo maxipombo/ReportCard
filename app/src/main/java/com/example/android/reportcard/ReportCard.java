@@ -1,5 +1,7 @@
 package com.example.android.reportcard;
 
+import android.util.Log;
+
 /**
  * Created by mpombos on 29/6/16.
  */
@@ -60,5 +62,16 @@ public class ReportCard {
     public int getPythonGrade() {
         return mPythonGrade;
     }
+
+    @Override
+    public String toString() {
+        return "ReportCard{" +
+                "mName='" + mName + '\'' +
+                ", mRubyGrade=" + mRubyGrade +
+                ", mMathGrade=" + mMathGrade +
+                ", mPythonGrade=" + mPythonGrade +
+                '}';
+    }
+
 
 }
